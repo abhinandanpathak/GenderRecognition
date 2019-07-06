@@ -1,0 +1,67 @@
+				AUDIO PROCESSING
+Acoustic Properties Measured
+The following acoustic properties of each voice are measured:
+1.duration
+2.Mean frequency
+3.sd
+4.median
+5.Q25
+6.Q75
+7.IQR
+8.skew
+9.kurt
+10.sp.ent
+11.sfm
+12.mode
+13.centroid
+14.peakf
+15.meanfun
+16.minfun
+17.maxfun
+18.meandom
+19.mindom
+20.maxdom
+21.dfrange
+22.modindx
+These paraameters are extracted from the audio signal, in order to perform further
+analysis.
+Language used:
+In order to implement the algorithm, we write a code in R, which is later translated
+into python.
+Packages Used in R:
+Seewave
+Soundgen
+tuner
+warbleR
+The output from the pre-processed WAV files were saved into a CSV file,
+containing 3168 row and 21 columns (20 columns for each feature and one label
+column for the classification of male or female).
+
+
+
+
+                      Database
+The audio signal is stored in CSV format.
+The dataset consists of 3,168 recorded voice samples, collected from male and
+female speakers. Each voice sample is stored as a .WAV file, which is then pre-
+processed for acoustic analysis using the specan function from the WarbleR R
+package. Specan measures 22 acoustic parameters on acoustic signals for which
+the start and end times are provided. The voice samples are processed by acoustic
+analysis in with an analyzed frequency range of 0hz-280hz containing 3168 rows
+and 21 columns (20 columns for each feature and one label column for the
+classification of male or female)
+
+
+
+
+                       
+
+
+
+
+
+
+
+
+
+
